@@ -1030,7 +1030,7 @@ $BookmarkHtml = "$BookmarkDir\bookmarks_24_06_2026.html"
 
 $BookmarkSource = Join-Path (Split-Path $PSCommandPath -Parent) "bookmarks_24_06_2026.html"
 
-$BookmarkUrl = "https://raw.githubusercontent.com/TheUnsocialEngineer/Osint-Installer-Script/main/bookmarks_24_06_2026.html"
+$BookmarkUrl = "https://raw.githubusercontent.com/TheUnsocialEngineer/Osint-Installer-Script/refs/heads/main/bookmarks_24_06_2026.html?token=GHSAT0AAAAAAD5J2MKY7ZCZZYUASL5XCDJY2R4BNYQ"
 
 New-Item `
     -ItemType Directory `
