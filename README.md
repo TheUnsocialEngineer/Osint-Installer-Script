@@ -48,145 +48,361 @@ Everything lands under `C:\OSINT` unless noted otherwise.
 - Force-installs **46** Chrome extensions via group policy. They show up automatically after Chrome launches.
 
 <details>
+<summary>Bookmarks (61 links, 14 folders)</summary>
+
+> <details>
+> <summary>Reference &amp; Platforms (5)</summary>
+>
+> - [Bellingcat OSINT Toolkit](https://bellingcat.gitbook.io/toolkit)
+> - [OSINT Rocks](https://osint.rocks/)
+> - [OSINT Industries](https://app.osint.industries/)
+> - [OsintCat](https://www.osintcat.net/)
+> - [Epieos](https://epieos.com/)
+> </details>
+
+> <details>
+> <summary>People Search (4)</summary>
+>
+> - [WhatsMyName](https://whatsmyname.app/)
+> - [IDCrawl Username Search](https://www.idcrawl.com/username-search)
+> - [ThatsThem](https://thatsthem.com/)
+> - [PimEyes](https://pimeyes.com/en)
+> </details>
+
+> <details>
+> <summary>Email &amp; Breaches (2)</summary>
+>
+> - [Have I Been Pwned](https://haveibeenpwned.com/)
+> - [VoilaNorbert](https://www.voilanorbert.com/)
+> </details>
+
+> <details>
+> <summary>Infrastructure &amp; Domains (8)</summary>
+>
+> - [Shodan](https://shodan.io/)
+> - [Censys](https://search.censys.io/)
+> - [URLScan](https://urlscan.io/)
+> - [IntelX](https://intelx.io/)
+> - [DomainTools WHOIS](https://whois.domaintools.com/)
+> - [ICANN Lookup](https://lookup.icann.org/)
+> - [grep.app](https://grep.app/)
+> - [PublicWWW](https://publicwww.com/)
+> </details>
+
+> <details>
+> <summary>Archiving (2)</summary>
+>
+> - [Wayback Machine](https://archive.org/web/)
+> - [Archive.today](https://archive.ph/)
+> </details>
+
+> <details>
+> <summary>Image &amp; Video (5)</summary>
+>
+> - [EXIF Tools](https://exif.tools/)
+> - [Google Lens](https://lens.google.com/)
+> - [TinEye](https://tineye.com/)
+> - [Forensically](https://29a.ch/photo-forensics/)
+> - [InVID WeVerify](https://www.invid-project.eu/tools-and-services/invid-verification-plugin/)
+> </details>
+
+> <details>
+> <summary>Maps &amp; Satellite (12)</summary>
+>
+> - [Google Maps](https://www.google.com/maps)
+> - [Google Earth](https://earth.google.com/web/)
+> - [EOS LandViewer](https://eos.com/landviewer/)
+> - [SARTopo](https://sartopo.com/)
+> - [Overpass Turbo](https://overpass-turbo.eu/)
+> - [OpenStreetMap](https://www.openstreetmap.org/)
+> - [Sentinel Hub Playground](https://apps.sentinel-hub.com/sentinel-playground/)
+> - [Sentinel Hub EO Browser](https://apps.sentinel-hub.com/eo-browser/)
+> - [NASA Worldview](https://worldview.earthdata.nasa.gov/)
+> - [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/map/)
+> - [Mapillary](https://www.mapillary.com/app/)
+> - [OpenAerialMap](https://openaerialmap.org/)
+> </details>
+
+> <details>
+> <summary>Geolocation (3)</summary>
+>
+> - [SunCalc](https://www.suncalc.org/)
+> - [GeoHints](https://geohints.com/)
+> - [PeakVisor](https://peakvisor.com/)
+> </details>
+
+> <details>
+> <summary>Property Records (2)</summary>
+>
+> - [Zillow](https://www.zillow.com/)
+> - [Broward County Property Appraiser](https://bcpa.net/RecMenu.asp)
+> </details>
+
+> <details>
+> <summary>Public Records (US) (4)</summary>
+>
+> - [Black Book Online - Voter Records](https://www.blackbookonline.info/USA-Voter-Records.aspx)
+> - [Black Book Online - County Court Records](https://www.blackbookonline.info/USA-County-Court-Records.aspx)
+> - [VoterRecords.com](https://voterrecords.com/)
+> - [NSOPW Sex Offender Registry](https://www.nsopw.gov/search-public-sex-offender-registries)
+> </details>
+
+> <details>
+> <summary>Companies &amp; Finance (6)</summary>
+>
+> - [OpenCorporates](https://opencorporates.com/)
+> - [UK Companies House](https://find-and-update.company-information.service.gov.uk/)
+> - [SEC EDGAR](https://www.sec.gov/edgar/search/)
+> - [OpenSanctions](https://www.opensanctions.org/)
+> - [OCCRP Aleph](https://aleph.occrp.org/)
+> - [OpenSecrets](https://www.opensecrets.org/)
+> </details>
+
+> <details>
+> <summary>Transport (4)</summary>
+>
+> - [Flightradar24](https://www.flightradar24.com/)
+> - [FlightAware](https://www.flightaware.com/)
+> - [MarineTraffic](https://www.marinetraffic.com/)
+> - [VesselFinder](https://www.vesselfinder.com/)
+> </details>
+
+> <details>
+> <summary>Conflict &amp; Monitoring (3)</summary>
+>
+> - [LiveUAMap](https://liveuamap.com/)
+> - [ACLED](https://acleddata.com/)
+> - [GPSJam](https://www.gpsjam.org/)
+> </details>
+
+> <details>
+> <summary>Misc (1)</summary>
+>
+> - [Backend script refactor](https://chatgpt.com/c/693cab17-b60c-8329-9377-be540cd7441b)
+> </details>
+
+</details>
+
+<details>
 <summary>Chrome extensions (46)</summary>
 
-- uBlock Origin
-- GHunt Companion
-- Wappalyzer
-- URLScan.io
-- Sputnik
-- Shodan
-- Netcraft
-- DNSChecker
-- Netlas.io
-- Wayback Machine
-- Web Archives
-- Forensic OSINT
-- Go Full Page
-- Save Webpages Offline As MHTML
-- PhotoOSINT
-- Split Screen for Google Chrome
-- Street View Tracker
-- Place ID Finder for Google Maps
-- Search by Image
-- EXIF Viewer Pro
-- Perceptual Image Analysis
-- Trufflepiggy - Context Search
-- SearchJumper
-- Dork Search Tool
-- WHO I AM
-- OSINT Username Search
-- Context Menu Search
-- Hunter.io
-- Email Extractor
-- YouTube Channel ID Finder
-- TTFinder
-- IG Username to ID
-- Steam ID Finder
-- InVID and WeVerify
-- Instant Data Scraper
-- HTML Inspector
-- Link Klipper
-- Regex Search
-- View Rendered Source
-- DumpItBlue+
-- YouTube Booster
-- Chrome Extension Source Viewer
-- CRX Extractor
-- Tampermonkey
-- CopyFish OCR
-- Blockchair
+> <details>
+> <summary>Browser utility (2)</summary>
+>
+> - uBlock Origin
+> - Tampermonkey
+> </details>
+
+> <details>
+> <summary>Infrastructure &amp; domains (7)</summary>
+>
+> - Shodan
+> - Netcraft
+> - DNSChecker
+> - Netlas.io
+> - URLScan.io
+> - Wappalyzer
+> - Blockchair
+> </details>
+
+> <details>
+> <summary>Archiving &amp; capture (4)</summary>
+>
+> - Wayback Machine
+> - Web Archives
+> - Save Webpages Offline As MHTML
+> - Go Full Page
+> </details>
+
+> <details>
+> <summary>Image &amp; video (6)</summary>
+>
+> - Search by Image
+> - EXIF Viewer Pro
+> - Perceptual Image Analysis
+> - PhotoOSINT
+> - InVID and WeVerify
+> - CopyFish OCR
+> </details>
+
+> <details>
+> <summary>Maps &amp; geolocation (3)</summary>
+>
+> - Street View Tracker
+> - Place ID Finder for Google Maps
+> - Split Screen for Google Chrome
+> </details>
+
+> <details>
+> <summary>Research &amp; page tools (9)</summary>
+>
+> - Forensic OSINT
+> - Sputnik
+> - Trufflepiggy - Context Search
+> - SearchJumper
+> - Dork Search Tool
+> - Context Menu Search
+> - View Rendered Source
+> - HTML Inspector
+> - Regex Search
+> </details>
+
+> <details>
+> <summary>People, email &amp; accounts (5)</summary>
+>
+> - WHO I AM
+> - OSINT Username Search
+> - Hunter.io
+> - Email Extractor
+> - GHunt Companion
+> </details>
+
+> <details>
+> <summary>Social &amp; platform IDs (6)</summary>
+>
+> - YouTube Channel ID Finder
+> - TTFinder
+> - IG Username to ID
+> - Steam ID Finder
+> - YouTube Booster
+> - DumpItBlue+
+> </details>
+
+> <details>
+> <summary>Scraping &amp; links (2)</summary>
+>
+> - Instant Data Scraper
+> - Link Klipper
+> </details>
+
+> <details>
+> <summary>Extension dev (2)</summary>
+>
+> - Chrome Extension Source Viewer
+> - CRX Extractor
+> </details>
 
 </details>
 
-### Desktop apps
+### Installed software
 
 <details>
-<summary>Chocolatey (26 packages)</summary>
+<summary>Installed software (27 packages)</summary>
 
-- googlechrome
-- git
-- python312
-- vscode
-- notepadplusplus
-- emeditor-free
-- obsidian
-- 7zip
-- exiftool
-- curl
-- jq
-- sysinternals
-- tor-browser
-- protonvpn
-- wireshark
-- ffmpeg
-- vlc
-- obs-studio
-- sqlitebrowser
-- openvpn
-- nmap
-- gh
-- golang
-- nodejs
-- yarn
-- docker-desktop
+> <details>
+> <summary>Development &amp; editors (12)</summary>
+>
+> - git
+> - python312
+> - vscode
+> - notepadplusplus
+> - emeditor-free
+> - obsidian
+> - gh
+> - golang
+> - nodejs
+> - yarn
+> - curl
+> - jq
+> </details>
 
-</details>
+> <details>
+> <summary>Browser (1)</summary>
+>
+> - googlechrome
+> </details>
 
-<details>
-<summary>winget (1 package)</summary>
+> <details>
+> <summary>Security &amp; network (6)</summary>
+>
+> - wireshark
+> - nmap
+> - sysinternals
+> - tor-browser
+> - protonvpn
+> - openvpn
+> </details>
 
-- Maltego
+> <details>
+> <summary>Media &amp; metadata (4)</summary>
+>
+> - ffmpeg
+> - vlc
+> - obs-studio
+> - exiftool
+> </details>
+
+> <details>
+> <summary>Utilities (2)</summary>
+>
+> - 7zip
+> - sqlitebrowser
+> </details>
+
+> <details>
+> <summary>Containers (1)</summary>
+>
+> - docker-desktop
+> </details>
+
+> <details>
+> <summary>OSINT platform (1)</summary>
+>
+> - Maltego (winget)
+> </details>
 
 </details>
 
 ### OSINT CLI tools
 
-Installed with pip, pipx, git, Go, or a standalone binary depending on what each project supports.
-
 <details>
-<summary>pipx (5)</summary>
+<summary>OSINT CLI tools (16)</summary>
 
-- sherlock-project → `sherlock`
-- ghunt → `ghunt`
-- gitfive → `gitfive`
-- maigret → `maigret`
-- telegram-phone-number-checker
+> <details>
+> <summary>Username &amp; people search (6)</summary>
+>
+> - sherlock — pipx (`sherlock-project`)
+> - maigret — pipx
+> - holehe — pip
+> - h8mail — pip
+> - blackbird — git clone → `C:\OSINT\blackbird`
+> - instaloader — pip
+> </details>
 
-</details>
+> <details>
+> <summary>Google &amp; social accounts (2)</summary>
+>
+> - ghunt — pipx
+> - gitfive — pipx
+> </details>
 
-<details>
-<summary>pip (4)</summary>
+> <details>
+> <summary>Recon &amp; enumeration (4)</summary>
+>
+> - theHarvester — git clone → `C:\OSINT\theHarvester` (`uv sync`)
+> - spiderfoot — git clone → `C:\OSINT\spiderfoot`
+> - subfinder — `go install`
+> - httpx — `go install`
+> </details>
 
-- holehe
-- h8mail
-- instaloader
-- instagram-location-search
+> <details>
+> <summary>Phone &amp; messaging (2)</summary>
+>
+> - phoneinfoga — binary → `C:\OSINT\bin`
+> - telegram-phone-number-checker — pipx
+> </details>
 
-</details>
+> <details>
+> <summary>Instagram (1)</summary>
+>
+> - instagram-location-search — pip
+> </details>
 
-<details>
-<summary>git clone → C:\OSINT (4)</summary>
-
-- spiderfoot — `pip install -r requirements.txt`
-- theHarvester — `uv sync`
-- blackbird — `pip install -r requirements.txt`
-- flowsint — Docker Compose (`docker-compose.prod.yml`)
-
-</details>
-
-<details>
-<summary>Go install (2)</summary>
-
-- subfinder
-- httpx
-
-</details>
-
-<details>
-<summary>Binary (1)</summary>
-
-- PhoneInfoga — GitHub release → `C:\OSINT\bin`
+> <details>
+> <summary>Investigation platform (1)</summary>
+>
+> - flowsint — git clone → `C:\OSINT\flowsint` + Docker Compose
+> </details>
 
 </details>
 
@@ -203,52 +419,59 @@ If Docker wasn't ready during install, run `flowsint` from cmd or use the deskto
 `C:\OSINT\bin` is added to the machine PATH.
 
 <details>
-<summary>Batch launchers (15)</summary>
+<summary>Launchers and shortcuts</summary>
 
-- sherlock
-- ghunt
-- gitfive
-- maigret
-- holehe
-- h8mail
-- telegram-phone-number-checker
-- spiderfoot
-- theharvester
-- phoneinfoga
-- blackbird
-- instaloader
-- start-docker
-- flowsint
-- flowsint-open
+> <details>
+> <summary>OSINT tool launchers (12)</summary>
+>
+> - sherlock
+> - ghunt
+> - gitfive
+> - maigret
+> - holehe
+> - h8mail
+> - telegram-phone-number-checker
+> - spiderfoot
+> - theharvester
+> - phoneinfoga
+> - blackbird
+> - instaloader
+> </details>
 
-</details>
+> <details>
+> <summary>Docker &amp; Flowsint launchers (3)</summary>
+>
+> - start-docker
+> - flowsint
+> - flowsint-open
+> </details>
 
-<details>
-<summary>Desktop shortcuts (5)</summary>
+> <details>
+> <summary>Desktop shortcuts (5)</summary>
+>
+> - Sherlock
+> - SpiderFoot
+> - GHunt
+> - Flowsint
+> - Maltego
+> </details>
 
-- Sherlock
-- SpiderFoot
-- GHunt
-- Flowsint
-- Maltego
-
-</details>
-
-<details>
-<summary>Taskbar pins (12)</summary>
-
-- Command Prompt
-- Windows PowerShell
-- Google Chrome
-- Visual Studio Code
-- Obsidian
-- Wireshark
-- Sherlock
-- GHunt
-- SpiderFoot
-- Maigret
-- Flowsint
-- Maltego
+> <details>
+> <summary>Taskbar pins (12)</summary>
+>
+> - Command Prompt
+> - Windows PowerShell
+> - Google Chrome
+> - Visual Studio Code
+> - Obsidian
+> - Wireshark
+> - Sherlock
+> - GHunt
+> - SpiderFoot
+> - Maigret
+> - Flowsint
+> - Maltego
+> </details>
 
 </details>
 
