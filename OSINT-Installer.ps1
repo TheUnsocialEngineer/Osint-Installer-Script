@@ -454,6 +454,46 @@ function Install-PhoneInfogaBinary {
     return $targetExe
 }
 
+function Install-ChromeBrowser {
+    param(
+        [string]$ChromeExePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+    )
+
+    if (Test-Path $ChromeExePath) {
+        Write-Host "[=] Google Chrome already installed"
+        return $true
+    }
+
+    Write-Host "[*] Installing Google Chrome (required before bookmarks/extensions)" -ForegroundColor Cyan
+    Install-ChocoPackage "googlechrome"
+    refreshenv
+
+    for ($i = 0; $i -lt 24; $i++) {
+        if (Test-Path $ChromeExePath) {
+            Write-Host "[=] Google Chrome ready: $ChromeExePath" -ForegroundColor Green
+            return $true
+        }
+
+        Start-Sleep -Seconds 5
+    }
+
+    Write-Host "[!] Google Chrome install did not finish; chrome.exe not found" -ForegroundColor Red
+    return $false
+}
+
+function Test-ChromeReady {
+    param(
+        [string]$ChromeExePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+    )
+
+    if (Test-Path $ChromeExePath) {
+        return $true
+    }
+
+    Write-Host "[!] Chrome is not installed; skipping Chrome configuration" -ForegroundColor Yellow
+    return $false
+}
+
 function Install-GoProjectDiscoveryTool {
     param(
         [string]$Name,
@@ -527,11 +567,20 @@ Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 refreshenv
 
 #############################################################
+# INSTALL CHROME (before bookmarks, profile, extensions)
+#############################################################
+
+$ChromeInstalled = Install-ChromeBrowser -ChromeExePath $chromeExe
+
+if (-not $ChromeInstalled) {
+    Write-Host "[!] Chrome install failed; bookmark and extension steps will be skipped" -ForegroundColor Yellow
+}
+
+#############################################################
 # INSTALL SOFTWARE
 #############################################################
 
 $packages = @(
-    "googlechrome",
     "git",
     "python312",
     "vscode",
@@ -942,6 +991,8 @@ foreach ($pin in $TaskbarPins) {
     Pin-ShortcutToTaskbar -ShortcutPath $ShortcutPath
 }
 
+if (Test-ChromeReady -ChromeExePath $chromeExe) {
+
 #############################################################
 # INITIALIZE CHROME PROFILE
 #############################################################
@@ -1110,6 +1161,8 @@ Write-Host "[*] Extensions will install automatically when Chrome launches."
 #############################################################
 
 Start-Process $chromeExe "--make-default-browser"
+
+}
 
 #############################################################
 # REMOVE EDGE
