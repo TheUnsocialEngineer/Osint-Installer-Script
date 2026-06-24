@@ -44,8 +44,10 @@ Everything lands under `C:\OSINT` unless noted otherwise.
 
 - Installs **Google Chrome** and sets it as the default browser.
 - Removes the Edge desktop shortcut.
-- Downloads OSINT bookmarks from GitHub to `C:\OSINT\Bookmarks\bookmarks_24_06_2026.html`.
+- Imports OSINT bookmarks into Chrome on the bookmarks bar as **OSINT → 14 category folders** (61 links). Source HTML is saved to `C:\OSINT\Bookmarks\bookmarks_24_06_2026.html`.
 - Force-installs **46** Chrome extensions via group policy. They show up automatically after Chrome launches.
+
+If bookmarks did not appear correctly, see [Manual bookmark import](#manual-bookmark-import) below.
 
 <details>
 <summary>Bookmarks (61 links, 14 folders)</summary>
@@ -189,97 +191,97 @@ Everything lands under `C:\OSINT` unless noted otherwise.
 > <details>
 > <summary>Browser utility (2)</summary>
 >
-> - uBlock Origin
-> - Tampermonkey
+> - [uBlock Origin](https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+> - [Tampermonkey](https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 > </details>
 
 > <details>
 > <summary>Infrastructure &amp; domains (7)</summary>
 >
-> - Shodan
-> - Netcraft
-> - DNSChecker
-> - Netlas.io
-> - URLScan.io
-> - Wappalyzer
-> - Blockchair
+> - [Shodan](https://chromewebstore.google.com/detail/jjalcfnidlmpjhdfepjhjbhnhkbgleap)
+> - [Netcraft](https://chromewebstore.google.com/detail/bmejphbfclcpmpohkggcjeibfilpamia)
+> - [DNSChecker](https://chromewebstore.google.com/detail/gegfpbhjnhegdnjdkghhnneaocdbbhjp)
+> - [Netlas.io](https://chromewebstore.google.com/detail/pncoieihjcmpooceknjajojehmhdedii)
+> - [URLScan.io](https://chromewebstore.google.com/detail/loehkbkhflmmkempgkdpkkhghdiegicp)
+> - [Wappalyzer](https://chromewebstore.google.com/detail/gppongmhjkpfnbhagpmjfkannfbllamg)
+> - [Blockchair](https://chromewebstore.google.com/detail/fhhkkooikehnkaodebbfnkinedlllcfk)
 > </details>
 
 > <details>
 > <summary>Archiving &amp; capture (4)</summary>
 >
-> - Wayback Machine
-> - Web Archives
-> - Save Webpages Offline As MHTML
-> - Go Full Page
+> - [Wayback Machine](https://chromewebstore.google.com/detail/fpnmgdkabkmnadcjpehmlllkndpkmiak)
+> - [Web Archives](https://chromewebstore.google.com/detail/hkligngkgcpcolhcnkgccglchdafcnao)
+> - [Save Webpages Offline As MHTML](https://chromewebstore.google.com/detail/nfbcfginnecenjncdjhaminfcienmehn)
+> - [Go Full Page](https://chromewebstore.google.com/detail/fdpohaocaechififmbbbbbknoalclacl)
 > </details>
 
 > <details>
 > <summary>Image &amp; video (6)</summary>
 >
-> - Search by Image
-> - EXIF Viewer Pro
-> - Perceptual Image Analysis
-> - PhotoOSINT
-> - InVID and WeVerify
-> - CopyFish OCR
+> - [Search by Image](https://chromewebstore.google.com/detail/cnojnbdhbhnkbcieeekonklommdnndci)
+> - [EXIF Viewer Pro](https://chromewebstore.google.com/detail/mmbhfeiddhndihdjeganjggkmjapkffm)
+> - [Perceptual Image Analysis](https://chromewebstore.google.com/detail/gidmeabdffonnejjlkbglmppmfniakdf)
+> - [PhotoOSINT](https://chromewebstore.google.com/detail/gonhdjmkgfkokhkflfhkbiagbmoolhcd)
+> - [InVID and WeVerify](https://chromewebstore.google.com/detail/mhccpoafgdgbhnjfhkcmgknndkeenfhe)
+> - [CopyFish OCR](https://chromewebstore.google.com/detail/eenjdnjldapjajjofmldgmkjaienebbj)
 > </details>
 
 > <details>
 > <summary>Maps &amp; geolocation (3)</summary>
 >
-> - Street View Tracker
-> - Place ID Finder for Google Maps
-> - Split Screen for Google Chrome
+> - [Street View Tracker](https://chromewebstore.google.com/detail/nlngoiabgfhbklfnidbhhcaakkojcocf)
+> - [Place ID Finder for Google Maps](https://chromewebstore.google.com/detail/gdnnaahojechcmemagbbbbnoiieolafp)
+> - [Split Screen for Google Chrome](https://chromewebstore.google.com/detail/dnollkdkikklpdganoecjcmmlddbennb)
 > </details>
 
 > <details>
 > <summary>Research &amp; page tools (9)</summary>
 >
-> - Forensic OSINT
-> - Sputnik
-> - Trufflepiggy - Context Search
-> - SearchJumper
-> - Dork Search Tool
-> - Context Menu Search
-> - View Rendered Source
-> - HTML Inspector
-> - Regex Search
+> - [Forensic OSINT](https://chromewebstore.google.com/detail/jojaomahhndmeienhjihojidkddkahcn)
+> - [Sputnik](https://chromewebstore.google.com/detail/manapjdamopgbpimgojkccikaabhmocd)
+> - [Trufflepiggy - Context Search](https://chromewebstore.google.com/detail/chffnhocnckigoapjdienmaphjnljpmo)
+> - [SearchJumper](https://chromewebstore.google.com/detail/hgepmblbgodbilmfdjkalkgofdcipkhh)
+> - [Dork Search Tool](https://chromewebstore.google.com/detail/neadoiokjghjpklekpjifhheaddbdjca)
+> - [Context Menu Search](https://chromewebstore.google.com/detail/ocpcmghnefmdhljkoiapafejjohldoga)
+> - [View Rendered Source](https://chromewebstore.google.com/detail/ejgngohbdedoabanmclafpkoogegdpob)
+> - [HTML Inspector](https://chromewebstore.google.com/detail/fpaahdcndgfpbbddmgckaifkfljkfkhd)
+> - [Regex Search](https://chromewebstore.google.com/detail/dcnmfijohgljejnnocmbecmpccgficcm)
 > </details>
 
 > <details>
 > <summary>People, email &amp; accounts (5)</summary>
 >
-> - WHO I AM
-> - OSINT Username Search
-> - Hunter.io
-> - Email Extractor
-> - GHunt Companion
+> - [WHO I AM](https://chromewebstore.google.com/detail/gdnhlhadhgnhaenfcphpeakdghkccfoo)
+> - [OSINT Username Search](https://chromewebstore.google.com/detail/hbpmcahfkjladffaenebdafoeohalfmp)
+> - [Hunter.io](https://chromewebstore.google.com/detail/hgmhmanijnjhaffoampdlllchpolkdnj)
+> - [Email Extractor](https://chromewebstore.google.com/detail/jdianbbpnakhcmfkcckaboohfgnngfcc)
+> - [GHunt Companion](https://chromewebstore.google.com/detail/dpdcofblfbmmnikcbmmiakkclocadjab)
 > </details>
 
 > <details>
 > <summary>Social &amp; platform IDs (6)</summary>
 >
-> - YouTube Channel ID Finder
-> - TTFinder
-> - IG Username to ID
-> - Steam ID Finder
-> - YouTube Booster
-> - DumpItBlue+
+> - [YouTube Channel ID Finder](https://chromewebstore.google.com/detail/bfkbgahmplemjmengbjlncclgcnckogb)
+> - [TTFinder](https://chromewebstore.google.com/detail/jjaeadbgppdbbdfhifejbheijbflleid)
+> - [IG Username to ID](https://chromewebstore.google.com/detail/kcdkceelebfeldicmpijnhbkoibieoji)
+> - [Steam ID Finder](https://chromewebstore.google.com/detail/iaeodlelphecgkpneeifmgcjgeoobjah)
+> - [YouTube Booster](https://chromewebstore.google.com/detail/dajnidicmkknmmbapmmmlemjdfolgjnf)
+> - [DumpItBlue+](https://chromewebstore.google.com/detail/igmgknoioooacbcpcfgjigbaajpelbfe)
 > </details>
 
 > <details>
 > <summary>Scraping &amp; links (2)</summary>
 >
-> - Instant Data Scraper
-> - Link Klipper
+> - [Instant Data Scraper](https://chromewebstore.google.com/detail/ofaokhiedipichpaobibbnahnkdoiiah)
+> - [Link Klipper](https://chromewebstore.google.com/detail/fahollcgofmpnehocdgofnhkkchiekoo)
 > </details>
 
 > <details>
 > <summary>Extension dev (2)</summary>
 >
-> - Chrome Extension Source Viewer
-> - CRX Extractor
+> - [Chrome Extension Source Viewer](https://chromewebstore.google.com/detail/jifpbeccnghkjeaalbbjmodiffmgedin)
+> - [CRX Extractor](https://chromewebstore.google.com/detail/ajkhmmldknmfjnmeedkbkkojgobmljda)
 > </details>
 
 </details>
@@ -287,68 +289,67 @@ Everything lands under `C:\OSINT` unless noted otherwise.
 ### Installed software
 
 <details>
-<summary>Installed software (27 packages)</summary>
+<summary>Installed software (26 packages)</summary>
 
 > <details>
-> <summary>Development &amp; editors (12)</summary>
+> <summary>Development &amp; editors (11)</summary>
 >
-> - git
-> - python312
-> - vscode
-> - notepadplusplus
-> - emeditor-free
-> - obsidian
-> - gh
-> - golang
-> - nodejs
-> - yarn
-> - curl
-> - jq
+> - [git](https://community.chocolatey.org/packages/git)
+> - [python312](https://community.chocolatey.org/packages/python312)
+> - [vscode](https://community.chocolatey.org/packages/vscode)
+> - [notepadplusplus](https://community.chocolatey.org/packages/notepadplusplus)
+> - [obsidian](https://community.chocolatey.org/packages/obsidian)
+> - [gh](https://community.chocolatey.org/packages/gh)
+> - [golang](https://community.chocolatey.org/packages/golang)
+> - [nodejs](https://community.chocolatey.org/packages/nodejs)
+> - [yarn](https://community.chocolatey.org/packages/yarn)
+> - [curl](https://community.chocolatey.org/packages/curl)
+> - [jq](https://community.chocolatey.org/packages/jq)
 > </details>
 
 > <details>
 > <summary>Browser (1)</summary>
 >
-> - googlechrome
+> - [googlechrome](https://community.chocolatey.org/packages/GoogleChrome)
 > </details>
 
 > <details>
 > <summary>Security &amp; network (6)</summary>
 >
-> - wireshark
-> - nmap
-> - sysinternals
-> - tor-browser
-> - protonvpn
-> - openvpn
+> - [wireshark](https://community.chocolatey.org/packages/wireshark)
+> - [nmap](https://community.chocolatey.org/packages/nmap)
+> - [sysinternals](https://community.chocolatey.org/packages/sysinternals)
+> - [tor-browser](https://community.chocolatey.org/packages/tor-browser)
+> - [protonvpn](https://community.chocolatey.org/packages/protonvpn)
+> - [openvpn](https://community.chocolatey.org/packages/openvpn)
 > </details>
 
 > <details>
 > <summary>Media &amp; metadata (4)</summary>
 >
-> - ffmpeg
-> - vlc
-> - obs-studio
-> - exiftool
+> - [ffmpeg](https://community.chocolatey.org/packages/ffmpeg)
+> - [vlc](https://community.chocolatey.org/packages/vlc)
+> - [obs-studio](https://community.chocolatey.org/packages/obs-studio)
+> - [exiftool](https://community.chocolatey.org/packages/exiftool)
 > </details>
 
 > <details>
 > <summary>Utilities (2)</summary>
 >
-> - 7zip
-> - sqlitebrowser
+> - [7zip](https://community.chocolatey.org/packages/7zip)
+> - [sqlitebrowser](https://community.chocolatey.org/packages/sqlitebrowser)
 > </details>
 
 > <details>
 > <summary>Containers (1)</summary>
 >
-> - docker-desktop
+> - [docker-desktop](https://community.chocolatey.org/packages/docker-desktop)
 > </details>
 
 > <details>
 > <summary>OSINT platform (1)</summary>
 >
-> - Maltego (winget)
+> - [Maltego](https://www.maltego.com/) (winget)
 > </details>
 
 </details>
@@ -361,56 +362,56 @@ Everything lands under `C:\OSINT` unless noted otherwise.
 > <details>
 > <summary>Username &amp; people search (6)</summary>
 >
-> - sherlock — pipx (`sherlock-project`)
-> - maigret — pipx
-> - holehe — pip
-> - h8mail — pip
-> - blackbird — git clone → `C:\OSINT\blackbird`
-> - instaloader — pip
+> - [sherlock](https://github.com/sherlock-project/sherlock) — pipx (`sherlock-project`)
+> - [maigret](https://github.com/soxoj/maigret) — pipx
+> - [holehe](https://github.com/megadose/holehe) — pip
+> - [h8mail](https://github.com/khast3x/h8mail) — pip
+> - [blackbird](https://github.com/p1ngul1n0/blackbird) — git clone → `C:\OSINT\blackbird`
+> - [instaloader](https://instaloader.github.io/) — pip
 > </details>
 
 > <details>
 > <summary>Google &amp; social accounts (2)</summary>
 >
-> - ghunt — pipx
-> - gitfive — pipx
+> - [ghunt](https://github.com/mxrch/GHunt) — pipx
+> - [gitfive](https://github.com/mxrch/GitFive) — git clone → `C:\OSINT\GitFive`
 > </details>
 
 > <details>
 > <summary>Recon &amp; enumeration (4)</summary>
 >
-> - theHarvester — git clone → `C:\OSINT\theHarvester` (`uv sync`)
-> - spiderfoot — git clone → `C:\OSINT\spiderfoot`
-> - subfinder — `go install`
-> - httpx — `go install`
+> - [theHarvester](https://github.com/laramies/theHarvester) — git clone → `C:\OSINT\theHarvester` (`uv sync`)
+> - [spiderfoot](https://github.com/smicallef/spiderfoot) — git clone → `C:\OSINT\spiderfoot`
+> - [subfinder](https://github.com/projectdiscovery/subfinder) — `go install`
+> - [httpx](https://github.com/projectdiscovery/httpx) — `go install`
 > </details>
 
 > <details>
 > <summary>Phone &amp; messaging (2)</summary>
 >
-> - phoneinfoga — binary → `C:\OSINT\bin`
-> - telegram-phone-number-checker — pipx
+> - [phoneinfoga](https://github.com/sundowndev/phoneinfoga) — binary → `C:\OSINT\bin`
+> - [telegram-phone-number-checker](https://github.com/bellingcat/telegram-phone-number-checker) — pipx
 > </details>
 
 > <details>
 > <summary>Instagram (1)</summary>
 >
-> - instagram-location-search — pip
+> - [instagram-location-search](https://pypi.org/project/instagram-location-search/) — pip
 > </details>
 
 > <details>
 > <summary>Investigation platform (1)</summary>
 >
-> - flowsint — git clone → `C:\OSINT\flowsint` + Docker Compose
+> - [flowsint](https://github.com/reconurge/flowsint) — git clone → `C:\OSINT\flowsint` + Docker Compose
 > </details>
 
 </details>
 
 ### Flowsint
 
-Needs **Docker Desktop** running. The script installs Docker, clones the repo to `C:\OSINT\flowsint`, copies env files, and starts the stack with `docker compose -f docker-compose.prod.yml up -d`.
+Needs **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** running. The script installs Docker, clones the repo to `C:\OSINT\flowsint`, copies env files, and starts the stack with `docker compose -f docker-compose.prod.yml up -d`.
 
-UI: http://localhost:5173/register — create an account on first use.
+UI: [http://localhost:5173/register](http://localhost:5173/register) — create an account on first use.
 
 If Docker wasn't ready during install, run `flowsint` from cmd or use the desktop shortcut after Docker is up.
 
@@ -424,53 +425,53 @@ If Docker wasn't ready during install, run `flowsint` from cmd or use the deskto
 > <details>
 > <summary>OSINT tool launchers (12)</summary>
 >
-> - sherlock
-> - ghunt
-> - gitfive
-> - maigret
-> - holehe
-> - h8mail
-> - telegram-phone-number-checker
-> - spiderfoot
-> - theharvester
-> - phoneinfoga
-> - blackbird
-> - instaloader
+> - [sherlock](https://github.com/sherlock-project/sherlock)
+> - [ghunt](https://github.com/mxrch/GHunt)
+> - [gitfive](https://github.com/mxrch/GitFive)
+> - [maigret](https://github.com/soxoj/maigret)
+> - [holehe](https://github.com/megadose/holehe)
+> - [h8mail](https://github.com/khast3x/h8mail)
+> - [telegram-phone-number-checker](https://github.com/bellingcat/telegram-phone-number-checker)
+> - [spiderfoot](https://github.com/smicallef/spiderfoot)
+> - [theharvester](https://github.com/laramies/theHarvester)
+> - [phoneinfoga](https://github.com/sundowndev/phoneinfoga)
+> - [blackbird](https://github.com/p1ngul1n0/blackbird)
+> - [instaloader](https://instaloader.github.io/)
 > </details>
 
 > <details>
 > <summary>Docker &amp; Flowsint launchers (3)</summary>
 >
-> - start-docker
-> - flowsint
-> - flowsint-open
+> - [start-docker](https://www.docker.com/products/docker-desktop/)
+> - [flowsint](https://github.com/reconurge/flowsint)
+> - [flowsint-open](http://localhost:5173/)
 > </details>
 
 > <details>
 > <summary>Desktop shortcuts (5)</summary>
 >
-> - Sherlock
-> - SpiderFoot
-> - GHunt
-> - Flowsint
-> - Maltego
+> - [Sherlock](https://github.com/sherlock-project/sherlock)
+> - [SpiderFoot](https://github.com/smicallef/spiderfoot)
+> - [GHunt](https://github.com/mxrch/GHunt)
+> - [Flowsint](https://github.com/reconurge/flowsint)
+> - [Maltego](https://www.maltego.com/)
 > </details>
 
 > <details>
 > <summary>Taskbar pins (12)</summary>
 >
 > - Command Prompt
-> - Windows PowerShell
-> - Google Chrome
-> - Visual Studio Code
-> - Obsidian
-> - Wireshark
-> - Sherlock
-> - GHunt
-> - SpiderFoot
-> - Maigret
-> - Flowsint
-> - Maltego
+> - [Windows PowerShell](https://learn.microsoft.com/powershell/)
+> - [Google Chrome](https://www.google.com/chrome/)
+> - [Visual Studio Code](https://code.visualstudio.com/)
+> - [Obsidian](https://obsidian.md/)
+> - [Wireshark](https://www.wireshark.org/)
+> - [Sherlock](https://github.com/sherlock-project/sherlock)
+> - [GHunt](https://github.com/mxrch/GHunt)
+> - [SpiderFoot](https://github.com/smicallef/spiderfoot)
+> - [Maigret](https://github.com/soxoj/maigret)
+> - [Flowsint](https://github.com/reconurge/flowsint)
+> - [Maltego](https://www.maltego.com/)
 > </details>
 
 </details>
@@ -484,10 +485,42 @@ If Docker wasn't ready during install, run `flowsint` from cmd or use the deskto
 
 ---
 
+## Manual bookmark import
+
+The installer imports bookmarks into Chrome automatically while Chrome is closed. If **OSINT** is missing from your bookmarks bar, shows as one flat list, or only some folders appear, import the HTML file manually.
+
+### Before you start
+
+1. Close Chrome completely — check Task Manager and end every `chrome.exe` process.
+2. Confirm the bookmark file exists at:
+
+   `C:\OSINT\Bookmarks\bookmarks_24_06_2026.html`
+
+   If it is missing, re-run the installer or download `bookmarks_24_06_2026.html` from this repo.
+
+### Import in Chrome
+
+1. Open Chrome.
+2. Open the bookmark manager — **Bookmarks → Bookmark manager**, or press `Ctrl+Shift+O`.
+3. Click the **⋮** menu (top right).
+4. Click **Import bookmarks**.
+5. Select `C:\OSINT\Bookmarks\bookmarks_24_06_2026.html`.
+6. Click **Open**.
+
+Chrome adds the import under **Bookmarks bar**. You should see **OSINT** with 14 category subfolders (Reference & Platforms, People Search, Email & Breaches, and the rest).
+
+If you already have an **OSINT** folder from a partial install, delete it first, then import again so you do not get duplicates.
+
+### Re-run the installer instead
+
+With Chrome fully closed, re-running `OSINT-Installer.ps1` rebuilds the bookmark tree in your Chrome profile directly. Use this if HTML import keeps flattening folders.
+
+---
+
 ## After install
 
 1. Reboot.
-2. Open Chrome — extensions install on their own within a minute or two.
+2. Open Chrome — extensions install on their own within a minute or two. Bookmarks bar should show **OSINT** with category subfolders. If not, see [Manual bookmark import](#manual-bookmark-import).
 3. Start Docker Desktop before using Flowsint.
 4. Open a **new** cmd or PowerShell window so PATH picks up `C:\OSINT\bin`.
 
