@@ -44,7 +44,7 @@ Everything lands under `C:\OSINT` unless noted otherwise.
 
 - Installs **Google Chrome** and sets it as the default browser.
 - Removes the Edge desktop shortcut.
-- Imports OSINT bookmarks into Chrome on the bookmarks bar as **OSINT → 14 category folders** (61 links). Source HTML is saved to `C:\OSINT\Bookmarks\bookmarks_24_06_2026.html`.
+- Imports OSINT bookmarks into Chrome as **14 category folders on the bookmarks bar** (61 links) — Reference & Platforms, People Search, Email & Breaches, and the rest. No parent OSINT folder. Source HTML is saved to `C:\OSINT\Bookmarks\bookmarks_24_06_2026.html`.
 - Force-installs **46** Chrome extensions via group policy. They show up automatically after Chrome launches.
 
 If bookmarks did not appear correctly, see [Manual bookmark import](#manual-bookmark-import) below.
@@ -487,7 +487,7 @@ If Docker wasn't ready during install, run `flowsint` from cmd or use the deskto
 
 ## Manual bookmark import
 
-The installer imports bookmarks into Chrome automatically while Chrome is closed. If **OSINT** is missing from your bookmarks bar, shows as one flat list, or only some folders appear, import the HTML file manually.
+The installer imports bookmarks into Chrome automatically while Chrome is closed. If category folders are missing from your bookmarks bar, show as one flat list, or only some folders appear, import the HTML file manually.
 
 ### Before you start
 
@@ -507,20 +507,20 @@ The installer imports bookmarks into Chrome automatically while Chrome is closed
 5. Select `C:\OSINT\Bookmarks\bookmarks_24_06_2026.html`.
 6. Click **Open**.
 
-Chrome adds the import under **Bookmarks bar**. You should see **OSINT** with 14 category subfolders (Reference & Platforms, People Search, Email & Breaches, and the rest).
+Chrome adds the import under **Bookmarks bar** as 14 top-level folders: Reference & Platforms, People Search, Email & Breaches, Infrastructure & Domains, Archiving, Image & Video, Maps & Satellite, Geolocation, Property Records, Public Records (US), Companies & Finance, Transport, Conflict & Monitoring, and Misc.
 
-If you already have an **OSINT** folder from a partial install, delete it first, then import again so you do not get duplicates.
+If you still have an old **OSINT** parent folder from a previous install, delete it first, then import again so you do not get duplicates.
 
 ### Re-run the installer instead
 
-With Chrome fully closed, re-running `OSINT-Installer.ps1` rebuilds the bookmark tree in your Chrome profile directly. Use this if HTML import keeps flattening folders.
+With Chrome fully closed, re-running `OSINT-Installer.ps1` rebuilds the 14 category folders on your bookmarks bar directly. Use this if HTML import keeps flattening folders.
 
 ---
 
 ## After install
 
 1. Reboot.
-2. Open Chrome — extensions install on their own within a minute or two. Bookmarks bar should show **OSINT** with category subfolders. If not, see [Manual bookmark import](#manual-bookmark-import).
+2. Open Chrome — extensions install on their own within a minute or two. Bookmarks bar should show 14 category folders. If not, see [Manual bookmark import](#manual-bookmark-import).
 3. Start Docker Desktop before using Flowsint.
 4. Open a **new** cmd or PowerShell window so PATH picks up `C:\OSINT\bin`.
 
