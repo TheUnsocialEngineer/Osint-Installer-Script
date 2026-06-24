@@ -21,7 +21,7 @@ PowerShell script that sets up a fresh Windows machine for OSINT work. Installs 
 3. Download and run the installer:
 
    ```powershell
-   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/TheUnsocialEngineer/Osint-Installer-Script/refs/heads/main/OSINT-Installer.ps1?token=GHSAT0AAAAAAD5J2MKYY22H7KGXKCHZWXYO2R4BP5A" | iex
+   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/TheUnsocialEngineer/Osint-Installer-Script/refs/heads/main/OSINT-Installer.ps1" | iex
    ```
 
    If you already have the script on disk:
