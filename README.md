@@ -21,7 +21,7 @@ PowerShell script that sets up a fresh Windows machine for OSINT work. Installs 
 3. Download and run the installer:
 
    ```powershell
-   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/TheUnsocialEngineer/Osint-Installer-Script/refs/heads/main/OSINT-Installer.ps1" | iex
+   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/TheUnsocialEngineer/Osint-Installer-Script/refs/heads/main/OSINT-Installer.ps1?token=GHSAT0AAAAAAD5J2MKYY22H7KGXKCHZWXYO2R4BP5A" | iex
    ```
 
    If you already have the script on disk:
@@ -45,7 +45,7 @@ Everything lands under `C:\OSINT` unless noted otherwise.
 - Installs **Google Chrome** and sets it as the default browser.
 - Removes the Edge desktop shortcut.
 - Imports OSINT bookmarks into Chrome as **14 category folders on the bookmarks bar** (61 links) — Reference & Platforms, People Search, Email & Breaches, and the rest. No parent OSINT folder. Source HTML is saved to `C:\OSINT\Bookmarks\bookmarks_24_06_2026.html`.
-- Force-installs **46** Chrome extensions via group policy. They show up automatically after Chrome launches.
+- Force-installs **47** Chrome extensions via group policy. They show up automatically after Chrome launches.
 
 If bookmarks did not appear correctly, see [Manual bookmark import](#manual-bookmark-import) below.
 
@@ -186,12 +186,13 @@ If bookmarks did not appear correctly, see [Manual bookmark import](#manual-book
 </details>
 
 <details>
-<summary>Chrome extensions (46)</summary>
+<summary>Chrome extensions (47)</summary>
 
 > <details>
-> <summary>Browser utility (2)</summary>
+> <summary>Browser utility (3)</summary>
 >
 > - [uBlock Origin](https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm)
+> - [Proton Pass](https://chromewebstore.google.com/detail/ghmbeldphafepmbegfdlkpapadhbakde)
 > - [Tampermonkey](https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 > </details>
 
@@ -409,11 +410,15 @@ If bookmarks did not appear correctly, see [Manual bookmark import](#manual-book
 
 ### Flowsint
 
-Needs **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** running. The script installs Docker, clones the repo to `C:\OSINT\flowsint`, copies env files, and starts the stack with `docker compose -f docker-compose.prod.yml up -d`.
+Needs **WSL 2** and **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** running. The script enables WSL, installs Docker Desktop, clones the repo to `C:\OSINT\flowsint`, copies env files, and starts the stack with `docker compose -f docker-compose.prod.yml up -d`.
+
+If WSL or Docker were installed for the first time, **reboot** before expecting flowsint containers to start.
 
 UI: [http://localhost:5173/register](http://localhost:5173/register) — create an account on first use.
 
 If Docker wasn't ready during install, run `flowsint` from cmd or use the desktop shortcut after Docker is up.
+
+**Docker / VM disclaimer:** The installer installs WSL 2 and Docker Desktop — it does not guarantee Docker will run on every machine. Docker needs hardware virtualization. On a VM, you may have to enable nested virtualization, assign enough RAM (8 GB+ recommended for Docker + Flowsint), and turn on VT-x/AMD-V in the host BIOS. Hyper-V-based VMs (Hyper-V, VMware with HV, some cloud instances) need extra setup; Docker Desktop may also ask for manual steps on first launch (WSL integration, signing in, accepting terms). If `docker info` fails after a reboot, fix Docker/WSL in Docker Desktop settings before running `flowsint`.
 
 ### Launchers and shortcuts
 
@@ -521,7 +526,7 @@ With Chrome fully closed, re-running `OSINT-Installer.ps1` rebuilds the 14 categ
 
 1. Reboot.
 2. Open Chrome — extensions install on their own within a minute or two. Bookmarks bar should show 14 category folders. If not, see [Manual bookmark import](#manual-bookmark-import).
-3. Start Docker Desktop before using Flowsint.
+3. Start Docker Desktop before using Flowsint (requires WSL 2 — reboot if the installer said WSL needs one).
 4. Open a **new** cmd or PowerShell window so PATH picks up `C:\OSINT\bin`.
 
 ---
@@ -549,3 +554,4 @@ With Chrome fully closed, re-running `OSINT-Installer.ps1` rebuilds the 14 categ
 - Re-running the script is mostly safe. pip/pipx tools get upgraded, old git clones for tools that moved to pip/pipx get removed, and the bookmark file gets re-downloaded if missing.
 - Some tools need API keys or accounts you set up yourself (Shodan, Hunter.io, Telegram checker, Maltego, Flowsint). The script only installs them.
 - Use this on a VM or investigation box, not your personal daily driver, unless you're fine with Windows Update staying off.
+- **Docker / Flowsint:** Installing Docker is not the same as Docker working. Nested virtualization, VM resource limits, and host hypervisor settings often need manual adjustment — see the disclaimer under [Flowsint](#flowsint).
